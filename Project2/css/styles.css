@@ -1,0 +1,295 @@
+
+*{
+    padding:0;
+    margin:0;
+
+}
+#navbar
+ { position:relative;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; so that all the content in the nav bar moves to centre;*/
+ }
+ #navbar::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    height: 100%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.4;
+ }
+ .icons
+ {
+    margin: -9px 55px;
+
+ }
+ .fa-solid fa-wheat-awn-circle-exclamation fa-lg
+ {
+  margin:10px 2px;
+ }
+ ul{
+    display:flex;
+    margin:18px -27px;
+ }
+ li{
+    font-family: 'Bree Serif', serif;
+    list-style: none;
+    font-size:1.2rem;
+ }
+ a{
+    color:white;
+    text-decoration: none;
+    display:box;
+    border-radius: 20px;
+    padding:3px 22px;
+ }
+ a:hover{
+    color:black;
+    background-color:white;
+
+
+ }
+ #home
+ {
+    display: flex;
+    flex-direction: column;
+    padding:3px 200px;
+    height:314px;
+    justify-content: center;
+    align-items: center;
+ }
+ .center
+ {
+   display: flex;
+   flex-direction: column;
+   padding:3px 200px;
+
+   justify-content: center;
+   align-items: center;
+ }
+
+ 
+ #hello::before
+ {
+    content:"";
+    background: url('../SPICES14.PNG') no-repeat center center/cover;
+    position:absolute;
+    height:52%;
+    width:100%;
+    z-index:-1;
+    opacity: 0.99;  
+    padding:0;
+ }
+
+ .h-primary
+ {  font-family: 'Bree Serif', serif;
+    padding: 12px;
+    font-size: 2.2rem;
+      color:white;
+ }
+
+ .h-primary line
+ {
+   color:black;
+ }
+
+ 
+ h1{
+    font-family: 'Bree Serif', serif;
+    color:white;
+    
+ }
+ p{
+    color:white;
+  justify-content: center;
+  text-align: center;
+ }
+ .first
+ { font-family: 'Bree Serif', serif;
+   color:black;
+ }
+ /* services section */
+
+#services
+{
+   margin:-4px;
+   display:flex;
+   margin-bottom:25px;
+
+}
+#services .box
+{
+   padding: 23px;
+   border: 2px solid orange;
+   border-radius: 24px;
+   margin: 27px;
+   background-color: #f5f2ef;
+}
+
+
+#services .box img{
+
+   height:127px;
+   margin:auto;
+   display: block;
+}
+.delivery
+{
+   width:190px;
+}
+
+.whole
+{
+   width:190px;
+}
+/* clients-section */
+   
+#client-section
+{
+height:344px;
+
+} 
+
+ #clients
+ {
+   display:flex;
+   justify-content: center;
+   align-items: center;
+ }
+ 
+ #clients img
+ {
+height:110px; 
+ }
+ .client-item
+ {
+   padding:40px;
+ }
+ 
+ #client-section::before
+ {
+   content: "";
+   background: url('../SPICES13.PNG'); 
+   position: absolute;
+   width:100%;
+   height:344px;
+   z-index:-1;
+   opacity:0.4;
+
+ }
+  /* contact -section */
+  #contact
+  {
+   position: relative;
+  }
+#contact::before
+{
+   content: "";
+   position:absolute;
+   width:100%;
+   height:568px;
+   background:url('../contact.jpg') no-repeat center center/cover;
+   z-index:-1;
+   opacity:0.4;
+}
+#contact-box
+{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding-bottom:34px;
+
+}
+#contact-box input,
+#contact-box textarea{
+   width:100%;
+   padding:0.5rem;
+   border-radius:9px;
+   font-size:1.1rem;
+
+}
+#contact-box form{
+   width:40%;
+
+}
+#contact-box label
+{
+ font-size:1.3rem;
+ font-family: 'Bree Serif', serif;
+    
+}
+
+
+footer{
+   background:black;
+   color:white;
+   padding:9px 20px;
+   text-align: center;
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 
+  utility classes */
+ 
+ .h-primary
+ {  font-family: 'Bree Serif', serif;
+    padding: 12px;
+    font-size: 2.2rem;
+ }
+
+ .h-secondary
+ {  font-family: 'Bree Serif', serif;
+    padding: 12px;
+    font-size: 1.2rem;
+ }
+ .btn {
+   
+    margin-top:20px;
+    background: #000000;
+    background-image: -webkit-linear-gradient(top, #000000, #637d8c);
+    background-image: -moz-linear-gradient(top, #000000, #637d8c);
+    background-image: -ms-linear-gradient(top, #000000, #637d8c);
+    background-image: -o-linear-gradient(top, #000000, #637d8c);
+    background-image: linear-gradient(to bottom, #000000, #637d8c);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: Arial;
+    color: white;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background: #0a1a24;
+    background-image: -webkit-linear-gradient(top, #0a1a24, #adb9c2);
+    background-image: -moz-linear-gradient(top, #0a1a24, #adb9c2);
+    background-image: -ms-linear-gradient(top, #0a1a24, #adb9c2);
+    background-image: -o-linear-gradient(top, #0a1a24, #adb9c2);
+    background-image: linear-gradient(to bottom, #0a1a24, #adb9c2);
+    text-decoration: none;
+  }
+
+  .center{
+   text-align: center;
+   color:black;
+   
+  }
+  
+  
